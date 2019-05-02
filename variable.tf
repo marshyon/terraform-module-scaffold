@@ -1,8 +1,11 @@
 variable "loc" {
     description = "Default Azure region"
-    default     =   ""
+    default     =   "westeurope"
 }
 
 variable "tags" {
-    default     = {}
+    default     = {
+        source  = "citadel"
+        env     = "training"
+    }
 }
